@@ -1,7 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gin-gonic/gin"
+)
 
 func main() {
-	fmt.Print("Hello World!")
+	var server = gin.Default()
+
+	server.Run("localhost:8153")
 }
